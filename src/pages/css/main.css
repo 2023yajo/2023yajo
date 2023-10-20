@@ -1,0 +1,75 @@
+.container_main {
+    width: 98vw;
+    height: 98vh;
+    position: relative;
+}
+
+.main_back {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(6, 16%);
+    background-color: none;
+    grid-template-rows: 16.3vh 75vh 8.3vh;
+}
+
+.grid-item {
+    border: 0.1px solid black;
+    text-align: left;
+}
+
+.grid_logo {
+    max-width: 90%;
+    max-height: 90%;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.grid_text{
+    margin-left: 5px;
+}
+.grid_link {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 150%;
+
+}
+
+.grid_nav{
+    margin-left: 5px;
+}
+.grid_side_top{
+    margin-left: 15px;
+    font-weight: 700;
+    font-size: 3.5vh ;
+}
+.grid_side_bottom {
+    margin-left: 20px;
+    margin-top: 30vh;
+}
+.grid_side_a{
+    text-decoration: none;
+    color: black;
+}
+.grid_date {
+    font-size: 2.5vh;
+}
+
+.grid_address {
+    font-size: 1.7vh;
+}
+
+.grid_a {
+    margin-left: 5px;
+    margin-top: 5px;
+    font-size: 2.5vh;
+    text-decoration: none;
+    color: black;
+}
