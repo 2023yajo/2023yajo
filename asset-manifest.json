@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/yajo/static/css/main.24bfb516.css",
+    "main.js": "/yajo/static/js/main.6e682ffc.js",
+    "static/media/poster.jpg": "/yajo/static/media/poster.47e24e842abdaa758561.jpg",
+    "static/media/back2.jpg": "/yajo/static/media/back2.35cff2aa4e63fe0ba570.jpg",
+    "index.html": "/yajo/index.html",
+    "main.24bfb516.css.map": "/yajo/static/css/main.24bfb516.css.map",
+    "main.6e682ffc.js.map": "/yajo/static/js/main.6e682ffc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.24bfb516.css",
+    "static/js/main.6e682ffc.js"
+  ]
+}
