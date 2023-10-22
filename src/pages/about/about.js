@@ -1,19 +1,13 @@
-function About(){
-    return(
-        <div className="articles">
-            <div className="article_1">
-            아찔한 상상을 해보자. 공공이라는 이름을 달고 세상에 나온 조각은 몇 점이나 있을까? 헤아릴 수조차 없는 숫자에 범위를 좁혀 홍익대학교 서울 캠퍼스로 향해 본다.
-            48년의 야외조각전을 지나며 1,300점 이상의 공공조각이 학교를 경유했다. 이 숫자들의 무게가 우리에게 시사하는 바는 무엇인가.
-            </div>
-            <div className="article_2">
-            공공조각이 지닌 ‘소통 가능성’은 이미 한계를 마주한 지 오래다. 예술의 자율성과 제도의 작동, 그리고 공중의 미관이라는 세 가지 항은 항시 상충하며 오작동을 낳는다.
-            아늑한 전시장을 벗어난 작품은 자율적 토대를 공격받기 십상이며, 민주적 대안을 부르짖는 작품조차 제도성을 채 은폐하지 못하고 있다.
-            ‘공공의 공간’에 진입하기 위한 ‘공공적 절차’는 사회 비판적 시각을 제도의 작동으로 소급시키는 것이다.
-            나아가 대다수의 공공조각은 ‘흉물’의 맥락에서 더욱 유명세를 얻는 형국이다. 이러한 삼중 부정을 마주하며, 작금의 공공조각들은 도시 미화 사업이라는 탈을 쓴 자본과의 결탁만을 따르는 듯하다.
-            </div>
-            <div className="article_3"></div>
-            <div className="article_4"></div>
-        </div>
+import Grid_bars from "../../component/grid_bar";
+import About_articles from "./about_articles";
+import About_poster from "./about_poster";
+
+function About() {
+    return (
+        <>
+            <About_articles />
+            <About_poster />
+        </>
     )
 }
 

@@ -1,0 +1,47 @@
+.articles_container {
+    position: absolute;
+    top: 16.7vh;
+    left: 33.2vw;
+    width: 32.5vw;
+    height: 68vh;
+    overflow: scroll;
+    margin-top: 7px;
+    margin-left: 7px;
+    
+}
+
+.highlight{
+    font-family: 'YESGothic-Regular';
+    background-color: white;
+    display: inline;
+    padding: 5px 5px;
+    text-indent: 0;
+    font-size: 13px;
+
+}
+.articles {
+    position: absolute;
+    width: 100%;
+    white-space: pre-line;
+    line-height: 130%;
+    z-index: 1;
+}
+
+.articles_container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.articles_container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.poster{
+    position: absolute;
+    top:17vh;
+    left:74vw;
+}
+
+.pos_img{
+    width: 90%;
+}
