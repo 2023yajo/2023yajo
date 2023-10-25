@@ -11,17 +11,18 @@
 }
 
 .highlight{
-    font-family: 'YESGothic-Regular';
+    font-family: 'pretendard';
+    font-weight: 600;
     background-color: white;
     display: inline;
     padding: 5px 5px;
-    text-indent: 0;
-    font-size: 13px;
+    font-size: 12px;
 
 }
 .articles {
     position: absolute;
     width: 100%;
+    text-indent: -5px;
     white-space: pre-line;
     line-height: 130%;
     z-index: 1;
