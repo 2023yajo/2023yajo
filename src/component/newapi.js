@@ -7,7 +7,10 @@ function NewApi() {
   const [data, setData] = useState(null); // 가져온 데이터가 담긴 변수
   const [num, setNum] = useState(1); //가져올 사람 번호가 담긴 변수
 
-  const locateArray = [0,25,224,382,61,92,49,324,211,756,111]; //버튼 넣고 싶은 셀 번호 목록
+  const locateArray = [0,458,381,371,457,383,605,375,566,388,411
+                        ,424,338,467,420,529,336,374,384,508,344
+                        ,215,292,346,385,345,421,548,427,423,376
+                        ,261,342,368,527]; //버튼 넣고 싶은 셀 번호 목록
 
   const cash = useMemo(() => {
     const cash = new Map();
@@ -31,6 +34,7 @@ function NewApi() {
 
   const renderCellValue = (cellIndex, rowIndex) => {
     const calculatedValue = cellIndex + 40 * rowIndex + 1;
+    if(calculatedValue === 261 || calculatedValue === 342|| calculatedValue === 368|| calculatedValue === 527) {return 25;}
     return locateArray.indexOf(calculatedValue);
   }; // 셀 번호 계산해서 리턴하는 함수
 
@@ -51,7 +55,7 @@ function NewApi() {
             <tr key={rowIndex}>
               {Array.from({ length: 40 }).map((_, cellIndex) => (
                 <td key={cellIndex} className='TdCell'>
-                  {haslocate(cellIndex, rowIndex) ? <button style={{width: '20px', height: '20px', fontSize:10}} onClick={() => handleCellClick(cellIndex, rowIndex)}>{renderCellValue(cellIndex,rowIndex)}</button> : null}
+                  {haslocate(cellIndex, rowIndex) ? <button style={{width: '20px', height: '20px', fontSize:10, backgroundColor:'skyblue', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center'}} onClick={() => handleCellClick(cellIndex, rowIndex)}>{renderCellValue(cellIndex,rowIndex)}</button> : null}
                 </td>
               ))}
             </tr>
