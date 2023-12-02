@@ -10,7 +10,7 @@ function Grid_bars({ back_img }) {
             <img className='main_back' src={back_img} />
             <div className="grid-container">
                 <div className="grid-item">
-                    <Link to={'/'} >
+                    <Link to={'/2023yajo'} >
                         <img src={logo} className='grid_logo' />
                     </Link>
                 </div>
