@@ -63,17 +63,17 @@ function NewApi() {
         </tbody>
       </table>
       {data ? (
-        <>
-          <p>{data.name}</p>
-          <p>{data.title}</p>
-          <p>{data.ing}</p>
-          <p>{data.size}</p>
-          <pre style={{ whiteSpace: 'pre-wrap', fontFamily: 'monospace' }}>
-            {data.text}
-          </pre>
-          <pre>{data.photoList}</pre>
-          <pre>{data.movieList}</pre>
-        </>
+        <div className='arc-works'>
+          <p className='arc-p'>{data.name}</p>
+          <p className='arc-p'>{data.title}</p>
+          <p className='arc-p'>{data.ing}</p>
+          <p className='arc-p'>{data.size}</p>
+          <p className='arc-p'>{data.text}</p>
+          {data.photoList.map((photo, index) => (
+            <img key={index} src={photo} className='arc-img' />))}
+          {data.movieList.map((movie, index) => (
+            <iframe key={index} src={movie} className='arc-mov' />))}
+        </div>
       ) : (
         <p>Loading...</p>
       )}
