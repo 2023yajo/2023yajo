@@ -1,6 +1,7 @@
 import React from 'react';
 import '../css/about.css';
 import Barr from '../../img/barrier.jpeg'
+import Modal from '../../component/Modal';
 
 
 const Program = () => {

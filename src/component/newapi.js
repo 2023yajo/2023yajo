@@ -69,9 +69,9 @@ function NewApi() {
           <p className='arc-p'>{data.ing}</p>
           <p className='arc-p'>{data.size}</p>
           <p className='arc-p'>{data.text}</p>
-          {data.photoList.map((photo, index) => (
+          {data.photoList && data.photoList.map((photo, index) => (
             <img key={index} src={photo} className='arc-img' />))}
-          {data.movieList.map((movie, index) => (
+          {data.movieList && data.movieList.map((movie, index) => (
             <iframe key={index} src={movie} className='arc-mov' />))}
         </div>
       ) : (
