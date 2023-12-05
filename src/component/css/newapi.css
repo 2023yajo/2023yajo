@@ -1,17 +1,23 @@
-.api_container{
+.api_container {
     position: absolute;
-    top:17vh;
-    left:17vw;
+    top: 17vh;
+    left: 17vw;
 }
-.ApiTable{
+
+.ApiTable {
     border: none;
-    border-Collapse:collapse;
-    background-Size:100% 100%;
+    border-Collapse: collapse;
+    background-Size: 100% 100%;
     background-image: url('../../img/map.png');
 }
-.TdCell{
+
+.TdCell {
     border: none;
     width: 23px;
     height: 23px;
-    word-break:fixed;
+    word-break: fixed;
+}
+
+.arc-pic {
+    margin: 50px;
 }
