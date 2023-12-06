@@ -7,6 +7,7 @@ import backimg from './img/back2.jpg'
 import NewApi from './component/newapi';
 import Credit from './pages/credit/credit';
 import Program from './pages/program/Program';
+import Works from './pages/archive/Works';
 
 function App() {
   return (
@@ -14,11 +15,12 @@ function App() {
       <HashRouter>
         <Grid_bars back_img={backimg} />
         <Routes>
-          <Route path='/' element={<Main />} />
+          <Route path='/2023yajo' element={<Main />} />
           <Route path='/about' element={<About />} />
-          <Route path='/archive' element={<NewApi />}/>
-          <Route path='/program' element={<Program/>}/>
-          <Route path='/credit' element={<Credit/>}/>
+          <Route path='/archive' element={<NewApi />} />
+          <Route path="/person/:id" element={<Works />} />
+          <Route path='/program' element={<Program />} />
+          <Route path='/credit' element={<Credit />} />
         </Routes>
       </HashRouter>
     </div>

@@ -1,7 +1,7 @@
-//이 주소가 실제 프로젝트에서 쓰일 주소
 import React, { useState, useEffect, useMemo } from 'react';
 import axios from 'axios';
 import './css/newapi.css'
+import { Link } from 'react-router-dom';
 
 function NewApi() {
   const [data, setData] = useState(null); // 가져온 데이터가 담긴 변수
@@ -55,28 +55,21 @@ function NewApi() {
             <tr key={rowIndex}>
               {Array.from({ length: 40 }).map((_, cellIndex) => (
                 <td key={cellIndex} className='TdCell'>
-                  {haslocate(cellIndex, rowIndex) ? <button style={{ width: '20px', height: '20px', fontSize: 10, backgroundColor: 'skyblue', borderRadius: '50%', display: 'flex', justifyContent: 'center', alignItems: 'center' }} onClick={() => handleCellClick(cellIndex, rowIndex)}>{renderCellValue(cellIndex, rowIndex)}</button> : null}
+                  {haslocate(cellIndex, rowIndex) ?
+                    <Link
+                      to={`/person/${renderCellValue(cellIndex, rowIndex)}`}
+                      state={{ num: renderCellValue(cellIndex, rowIndex) }}
+                    >
+                      <button onClick={() => handleCellClick(cellIndex, rowIndex)}>
+                        {renderCellValue(cellIndex, rowIndex)}
+                      </button>
+                    </Link> : null}
                 </td>
               ))}
             </tr>
           ))}
         </tbody>
       </table>
-      {data ? (
-        <div className='arc-works'>
-          <p className='arc-p'>{data.name}</p>
-          <p className='arc-p'>{data.title}</p>
-          <p className='arc-p'>{data.ing}</p>
-          <p className='arc-p'>{data.size}</p>
-          <p className='arc-p'>{data.text}</p>
-          {data.photoList && data.photoList.map((photo, index) => (
-            <img key={index} src={photo} className='arc-img' />))}
-          {data.movieList && data.movieList.map((movie, index) => (
-            <iframe key={index} src={movie} className='arc-mov' />))}
-        </div>
-      ) : (
-        <p>Loading...</p>
-      )}
     </div>
   );
 }
