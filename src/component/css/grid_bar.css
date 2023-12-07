@@ -79,8 +79,8 @@
     border-right: none;
 }
 
-.gird_bottom{
-}
+.gird_bottom {}
+
 .grid_logo {
     max-width: 80%;
     max-height: 80%;
@@ -97,8 +97,13 @@
 
 .grid_link {
     text-decoration: none;
-    color: black;
+    color: #888989;
+    transition: color 0.5s;
     font-size: 200%;
+}
+
+.grid_link:hover {
+    color: black;
 }
 
 .grid_nav {
@@ -146,6 +151,7 @@
     text-decoration: none;
     color: black;
 }
-.grid_arrow{
+
+.grid_arrow {
     width: 1.5vh;
 }

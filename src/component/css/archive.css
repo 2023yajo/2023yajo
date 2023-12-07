@@ -8,9 +8,16 @@
 
 .achive-link {
     font-family: 'pretendard';
-    color: black;
+    color: #888989;
     text-decoration: none;
-    line-height: 200%;
+    font-size: large;
+    line-height: 350%;
+    transition: color 0.5s;
+}
+
+.achive-link:hover {
+    color: black;
+
 }
 
 .archive-menu::-webkit-scrollbar {

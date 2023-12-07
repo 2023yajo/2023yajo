@@ -1,15 +1,26 @@
 .left {
     position: absolute;
-    top: 18vh;
+    top: 16.5vh;
     left: 17vw;
-    width: 30px;
+    font-size: 35px;
+    color: #888989;
+    transition: color 0.5s;
+}
+
+.left:hover {
+    color: black;
 }
 
 .right {
     position: absolute;
-    top: 37.7vh;
-    width: 30px;
-    left: 47.2vw;
+    top: 36vh;
+    left: 47vw;
     z-index: 100000;
+    font-size: 35px;
+    color: #888989;
+    transition: color 0.5s;
+}
 
+.right:hover {
+    color: black;
 }

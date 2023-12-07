@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import arrow from '../img/right.png'
 
 const Right = () => {
     const { id } = useParams();
@@ -10,7 +9,7 @@ const Right = () => {
         return (
             <div>
                 <Link to={`/person/${destination}`}>
-                    <img className='right' src={arrow} />
+                    <p className='right'>→</p>
                 </Link>
             </div>
         );

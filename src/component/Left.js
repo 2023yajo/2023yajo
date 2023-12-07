@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link, useParams } from 'react-router-dom';
-import arrow from '../img/left.png'
 import './css/pointer.css'
 
 const Left = () => {
@@ -11,7 +10,8 @@ const Left = () => {
         return (
             <div>
                 <Link to={`/person/${destination}`}>
-                    <img className='left' src={arrow} />
+                    <p className='left'>←</p>
+                    {/* <img className='left' src={arrow} /> */}
                 </Link>
             </div>
         );
