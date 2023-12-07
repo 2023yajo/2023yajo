@@ -18,6 +18,107 @@
     word-break: fixed;
 }
 
-.arc-p {
+.arc-texts {
+    position: absolute;
+    left: 33.2vw;
+    top: 16.7vh;
+    width: 16.6vw;
+}
+
+.arc-title {
+    display: block;
     font-family: 'pretendard';
+    font-weight: 600;
+    font-size: 25px;
+    position: absolute;
+    width: 16.6vw;
+    height: 4.8vh;
+}
+
+.arc-name {
+    display: block;
+    font-family: 'pretendard';
+    font-weight: 600;
+    font-size: 20px;
+    position: absolute;
+    top: 19vh;
+    width: 16.6vw;
+    height: 3.8vh;
+    border: 0.5px solid #888989;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+}
+
+.arc-material {
+    display: block;
+    font-family: 'pretendard';
+    font-size: 13px;
+    position: absolute;
+    top: 25vh;
+    width: 16.6vw;
+    height: 8vh;
+    border: 0.5px solid #888989;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.arc-size {
+    display: block;
+    font-family: 'pretendard';
+    font-size: 13px;
+    position: absolute;
+    top: 33vh;
+    width: 16.6vw;
+    height: 8vh;
+    border: 0.5px solid #888989;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+.arc-caption {
+    font-family: 'pretendard';
+    font-weight: 400;
+    font-size: 13px;
+    position: absolute;
+    top: 41vh;
+    left: 0.5vh;
+    width: 16.5vw;
+    height: 32vh;
+    overflow: scroll;
+    line-height: 170%;
+}
+
+.arc-pics {
+    position: absolute;
+    left: 50vw;
+    top: 17vh;
+    max-width: 47vw;
+    max-height: 73vh;
+    overflow: scroll;
+}
+
+.arc-pics::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.arc-pics::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.arc-caption::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.arc-caption::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.arc-img {
+    max-width: 45vw;
+    max-height: 70vh;
 }

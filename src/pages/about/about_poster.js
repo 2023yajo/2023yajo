@@ -1,12 +1,11 @@
 import React from "react";
-import yajo_pos from '../../img/poster.jpg'
 import '../css/about.css'
 
 
-function About_poster(){
-    return(
+function About_poster() {
+    return (
         <div className="poster">
-            <img src={yajo_pos} className="pos_img"/>
+            <img src='https://i.postimg.cc/zfw3ZMh0/Kakao-Talk-20231206-202803636.jpg' className="pos_img" />
         </div>
     )
 }

@@ -1,0 +1,15 @@
+.left {
+    position: absolute;
+    top: 18vh;
+    left: 17vw;
+    width: 30px;
+}
+
+.right {
+    position: absolute;
+    top: 37.7vh;
+    width: 30px;
+    left: 47.2vw;
+    z-index: 100000;
+
+}

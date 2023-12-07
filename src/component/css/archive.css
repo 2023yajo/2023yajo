@@ -1,0 +1,23 @@
+.archive-menu {
+    position: absolute;
+    top: 17vh;
+    left: 84vw;
+    height: 73vh;
+    overflow: scroll;
+}
+
+.achive-link {
+    font-family: 'pretendard';
+    color: black;
+    text-decoration: none;
+    line-height: 200%;
+}
+
+.archive-menu::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.archive-menu::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
