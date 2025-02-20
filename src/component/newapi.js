@@ -1,36 +1,14 @@
-import React, { useState, useEffect, useMemo } from 'react';
-import axios from 'axios';
+import React, { useState } from 'react';
 import './css/newapi.css'
 import { Link } from 'react-router-dom';
 
 function NewApi() {
-  const [data, setData] = useState(null); // 가져온 데이터가 담긴 변수
   const [num, setNum] = useState(1); //가져올 사람 번호가 담긴 변수
 
   const locateArray = [0, 458, 381, 371, 457, 383, 605, 375, 566, 388, 411
     , 424, 338, 467, 420, 529, 336, 374, 384, 508, 344
     , 215, 292, 346, 385, 345, 421, 548, 427, 423, 376
     , 261, 342, 368, 527]; //버튼 넣고 싶은 셀 번호 목록
-
-  const cash = useMemo(() => {
-    const cash = new Map();
-    return cash;
-  }, [])// 캐시 메모리
-
-  useEffect(() => {
-    if (cash.has(num)) {
-      setData(cash.get(num))
-    } else {
-      axios.get(`https://port-0-yazo2023-3prof2lll0d1goc.sel4.cloudtype.app/getInfo/` + num)
-        .then(response => {
-          setData(response.data);
-          cash.set(num, response.data);
-        })
-        .catch(error => {
-          console.error('Error fetching data:', error);
-        });
-    }
-  }, [num]); //백엔드에 요청 날려서 데이터 받아오는 함수
 
   const renderCellValue = (cellIndex, rowIndex) => {
     const calculatedValue = cellIndex + 40 * rowIndex + 1;

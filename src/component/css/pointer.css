@@ -1,26 +1,57 @@
-.left {
-    position: absolute;
-    top: 16.5vh;
-    left: 17vw;
-    font-size: 35px;
-    color: #888989;
-    transition: color 0.5s;
+@media(min-width:990px) {
+    .left {
+        position: absolute;
+        top: 16.5vh;
+        left: 17vw;
+        font-size: 35px;
+        color: #888989;
+        transition: color 0.5s;
+        z-index: 100000;
+
+    }
+
+
+    .right {
+        position: absolute;
+        top: 36vh;
+        left: 47vw;
+        z-index: 100000;
+        font-size: 35px;
+        color: #888989;
+        transition: color 0.5s;
+    }
+
 }
 
-.left:hover {
-    color: black;
-}
+@media(max-width:990px) {
+    .left {
+        position: absolute;
+        top: 52.5vh;
+        left: 4vw;
+        font-size: 25px;
+        color: #555555;
+        transition: color 0.5s;
+        z-index: 100000;
 
-.right {
-    position: absolute;
-    top: 36vh;
-    left: 47vw;
-    z-index: 100000;
-    font-size: 35px;
-    color: #888989;
-    transition: color 0.5s;
+    }
+
+
+    .right {
+        position: absolute;
+        top: 60.5vh;
+        left: 89vw;
+        z-index: 100000;
+        font-size: 25px;
+        color: #555555;
+        transition: color 0.5s;
+    }
+
 }
 
 .right:hover {
+    color: black;
+}
+
+.left:hover {
     color: black;
 }

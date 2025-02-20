@@ -1,10 +1,13 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
 import logo from "../img/logo_49.png"
 import "./css/grid_bar.css"
 import arrow from '../img/arrow.png'
 
 function Grid_bars({ back_img }) {
+    const location = useLocation();
+
+
     return (
         <div className='container_main'>
             <img className='main_back' src={back_img} />
@@ -24,26 +27,26 @@ function Grid_bars({ back_img }) {
                     </p>
                 </div>
                 <div className="grid-item">
-                    <Link to={'/about'} className='grid_link'>
+                    <Link to={'/about'} className={`grid_link ${location.pathname === '/about' ? 'active' : ''}`}>
                         <p className='grid_nav'>
                             About
                         </p>
                     </Link></div>
                 <div className="grid-item">
-                    <Link to={'/archive'} className='grid_link'>
+                    <Link to={'/archive'} className={`grid_link ${location.pathname === '/archive' ? 'active' : ''}`}>
                         <p className='grid_nav'>
                             Archive
                         </p>
                     </Link>
                 </div>
                 <div className="grid-item">
-                    <Link to={'/program'} className='grid_link'>
+                    <Link to={'/program'} className={`grid_link ${location.pathname === '/program' ? 'active' : ''}`}>
                         <p className='grid_nav'>
                             Program
                         </p>
                     </Link></div>
                 <div className="grid-item">
-                    <Link to={'/credit'} className='grid_link'>
+                    <Link to={'/credit'} className={`grid_link ${location.pathname === '/credit' ? 'active' : ''}`}>
                         <p className='grid_nav'>
                             Credit
                         </p>
@@ -100,8 +103,8 @@ function Grid_bars({ back_img }) {
                 <div className="grid-item">
                     <div className="gird_bottom">
                         <p className='grid_date'>
-                        &nbsp;04066 서울특별시 마포구 와우산로 94(상수동)<br />
-                        &nbsp;홍익대학교 서울캠퍼스 일대
+                            &nbsp;04066 서울특별시 마포구 와우산로 94(상수동)<br />
+                            &nbsp;홍익대학교 서울캠퍼스 일대
                         </p>
                     </div>
                 </div>
@@ -109,18 +112,18 @@ function Grid_bars({ back_img }) {
                 <div className="grid-item">
                     <div className="gird_bottom">
                         <a href='https://www.instagram.com/hongik_yajo/' className='grid_a'>
-                        &nbsp;Instagram&nbsp;
-                        <img src={arrow} className="grid_arrow"/>
+                            &nbsp;Instagram&nbsp;
+                            <img src={arrow} className="grid_arrow" />
                         </a>
                     </div>
                 </div>
                 <div className="grid-item">
                     <div className="gird_bottom">
                         <a href='https://scu.hongik.ac.kr/dept/index.html' className='grid_a'>
-                        &nbsp;Hongik University&nbsp;
-                        <img src={arrow} className="grid_arrow"/>
-                        <br />
-                        &nbsp;Sculpture Of Art
+                            &nbsp;Hongik University&nbsp;
+                            <img src={arrow} className="grid_arrow" />
+                            <br />
+                            &nbsp;Sculpture Of Art
                         </a>
                     </div>
                 </div>

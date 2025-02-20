@@ -1,0 +1,93 @@
+* {
+    font-family: 'YESMyoungjo-Regular';
+}
+
+@media(max-width: 990px) {
+    .name {
+        color: #777777;
+        position: absolute;
+        top: 8.3vh;
+        left: 12vw;
+        font-size: 150%;
+        margin-top: 10px;
+        margin-left: 5px;
+        line-height: 150%;
+    }
+
+    .addr {
+        position: absolute;
+        top: 56.1vh;
+        left: 13vw;
+        font-size: 70%;
+        width: 54vw;
+        margin-top: 10px;
+        line-height: 150%;
+    }
+
+    .date {
+        position: absolute;
+        top: 56.1vh;
+        left: 69vw;
+        font-size: 70%;
+        width: 26vw;
+        margin-top: 10px;
+        line-height: 150%;
+    }
+
+    .sculpture {
+        position: absolute;
+        top: 96vh;
+        left: 13vw;
+    }
+
+    .insta {
+        position: absolute;
+        top: 96vh;
+        left: 69vw;
+    }
+
+    .link {
+        text-decoration: none;
+        color: black;
+        font-size: 10px;
+    }
+
+    .arrow {
+        width: 8px;
+    }
+
+    .year {
+        position: absolute;
+        top: 57.2vh;
+        left: 2vw;
+        color: #777777;
+        line-height: 155%;
+    }
+
+    .linkBig {
+        text-decoration: none;
+        color: black;
+        font-size: 13px;
+    }
+
+    .linkBig2 {
+        text-decoration: none;
+        color: #777777;
+        font-size: 13px;
+    }
+}
+
+@media(min-width:991px) {
+    .info {
+        display: none;
+    }
+
+    .sculpture {
+        display: none;
+    }
+
+    .insta {
+        display: none;
+    }
+
+}

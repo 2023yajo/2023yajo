@@ -155,3 +155,7 @@
 .grid_arrow {
     width: 1.5vh;
 }
+
+.active {
+    color: black;
+}

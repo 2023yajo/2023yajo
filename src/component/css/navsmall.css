@@ -1,0 +1,144 @@
+* {
+    font-family: 'YESMyoungjo-Regular';
+}
+
+.imgContainer {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+.navBack {
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+
+
+.gridContainer {
+    display: grid;
+    background-color: none;
+    grid-template-columns: 12vw 56vw 28vw 4vw;
+    grid-template-rows: 8.3vh 47.8vh 8.3vh 32vh 3.6vh;
+
+}
+
+.gridItem {
+    border: 0.5px solid #888989;
+    text-align: left;
+    border-top: none;
+    border-left: none;
+    white-space: nowrap;
+}
+
+.mobLogo {
+    width: 70%;
+    margin: 10%;
+    margin-top: 20%;
+}
+
+.topName {
+    font-size: 60%;
+    line-height: 150%;
+    margin-left: 5px;
+    margin-top: 5px;
+    color: #222222;
+}
+
+.archivePage .gridItem:nth-child(5),
+.archivePage .gridItem:nth-child(6),
+.archivePage .gridItem:nth-child(7),
+.archivePage .gridItem:nth-child(8),
+.archivePage .gridItem:nth-child(9),
+.archivePage .gridItem:nth-child(12),
+.archivePage .gridItem:nth-child(10),
+.archivePage .gridItem:nth-child(11) {
+    border-bottom: none;
+}
+
+.gridContainer .gridItem:nth-child(4) {
+    border-right: none;
+}
+
+.gridContainer .gridItem:nth-child(8) {
+    border-right: none;
+}
+
+.gridContainer .gridItem:nth-child(12) {
+    border-right: none;
+}
+
+.gridContainer .gridItem:nth-child(16) {
+    border-right: none;
+}
+
+.gridContainer .gridItem:nth-child(17) {
+    border-bottom: none;
+}
+
+.gridContainer .gridItem:nth-child(18) {
+    border-bottom: none;
+}
+
+.gridContainer .gridItem:nth-child(19) {
+    border-bottom: none;
+}
+
+.gridContainer .gridItem:nth-child(20) {
+    border-right: none;
+    border-bottom: none;
+}
+
+.menuContainer {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 96vw;
+    width: 30vw;
+    z-index: 2;
+}
+
+.menu {
+    display: block;
+    text-align: center;
+    height: 5vh;
+    padding-bottom: 10px;
+    padding-top: 25px;
+    border-top: 0.5px solid #888989;
+}
+
+.menuLink {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.noneblanks {
+    height: 8.3vh;
+    border-bottom: 0.5px solid #888989;
+
+}
+
+.noneblank {
+    height: 50vh;
+    border-top: 0.5px solid #888989;
+
+}
+
+.buttons {
+    border: none;
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.buttons img {
+    position: absolute;
+    top: 1vh;
+    left: 87vw;
+    width: 7vw;
+}

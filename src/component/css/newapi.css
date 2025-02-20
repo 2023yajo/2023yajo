@@ -1,103 +1,203 @@
-.api_container {
-    position: absolute;
-    top: 17vh;
-    left: 17vw;
+@media(min-width:990px) {
+
+    .api_container {
+        position: absolute;
+        top: 17vh;
+        left: 17vw;
+    }
+
+    .ApiTable {
+        border: none;
+        border-Collapse: collapse;
+        background-Size: 100% 100%;
+        background-image: url('../../img/map.png');
+    }
+
+    .TdCell {
+        border: none;
+        width: 23px;
+        height: 23px;
+        word-break: fixed;
+    }
+
+    .arc-texts {
+        position: absolute;
+        left: 33.2vw;
+        top: 16.7vh;
+        width: 16.6vw;
+    }
+
+    .arc-title {
+        display: block;
+        font-family: 'pretendard';
+        font-weight: 600;
+        font-size: 25px;
+        position: absolute;
+        width: 16.6vw;
+        height: 4.8vh;
+    }
+
+    .arc-name {
+        display: block;
+        font-family: 'pretendard';
+        font-weight: 600;
+        font-size: 20px;
+        position: absolute;
+        top: 19vh;
+        width: 16.6vw;
+        height: 3.8vh;
+        border: 0.5px solid #888989;
+        border-bottom: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .arc-material {
+        display: block;
+        font-family: 'pretendard';
+        font-size: 13px;
+        position: absolute;
+        top: 25vh;
+        width: 16.6vw;
+        height: 8vh;
+        border: 0.5px solid #888989;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .arc-size {
+        display: block;
+        font-family: 'pretendard';
+        font-size: 13px;
+        position: absolute;
+        top: 33vh;
+        width: 16.6vw;
+        height: 8vh;
+        border: 0.5px solid #888989;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+
+    .arc-caption {
+        font-family: 'pretendard';
+        font-weight: 400;
+        font-size: 13px;
+        position: absolute;
+        top: 41vh;
+        left: 0.5vh;
+        width: 16.5vw;
+        height: 32vh;
+        overflow: scroll;
+        line-height: 170%;
+    }
+
+    .arc-pics {
+        position: absolute;
+        left: 50vw;
+        top: 17vh;
+        max-width: 47vw;
+        max-height: 73vh;
+        overflow: scroll;
+    }
+
+
+
+    .arc-img {
+        max-width: 45vw;
+        max-height: 70vh;
+    }
 }
 
-.ApiTable {
-    border: none;
-    border-Collapse: collapse;
-    background-Size: 100% 100%;
-    background-image: url('../../img/map.png');
+@media(max-width:990px) {
+    .api_container {
+        display: none;
+    }
+
+    .arc-pics {
+        position: absolute;
+        left: 13vw;
+        top: 13vh;
+        max-width: 82vw;
+        max-height: 43vh;
+        overflow: scroll;
+    }
+
+    .arc-img {
+        max-width: 82vw;
+        max-height: 40vh;
+    }
+
+    .arc-title {
+        display: block;
+        font-family: 'pretendard';
+        font-weight: 600;
+        font-size: 18px;
+        position: absolute;
+        left: 13vw;
+        top: 57vh;
+        width: 54vw;
+        overflow: scroll;
+        height: 7.5vh;
+    }
+
+    .arc-caption {
+        font-family: 'pretendard';
+        font-weight: 400;
+        font-size: 13px;
+        position: absolute;
+        top: 64.5vh;
+        left: 13vw;
+        width: 55vw;
+        height: 31.5vh;
+        overflow: scroll;
+        line-height: 190%;
+    }
+
+    .arc-name {
+        display: block;
+        font-family: 'pretendard';
+        font-weight: 600;
+        font-size: 15px;
+        position: absolute;
+        top: 61vh;
+        left: 69vw;
+    }
+
+    .arc-material {
+        display: block;
+        font-family: 'pretendard';
+        font-size: 9px;
+        position: absolute;
+        top: 73vh;
+        left: 68vw;
+        width: 27.3vw;
+        height: 8vh;
+        border-top: 0.5px solid #888989;
+        padding-top: 5px;
+        padding-left: 5px;
+        overflow: scroll;
+    }
+
+    .arc-size {
+        display: block;
+        font-family: 'pretendard';
+        font-size: 10px;
+        position: absolute;
+        top: 65vh;
+        left: 69vw;
+    }
+
 }
 
-.TdCell {
-    border: none;
-    width: 23px;
-    height: 23px;
-    word-break: fixed;
+.arc-material::-webkit-scrollbar {
+    width: 0;
+    height: 0;
 }
 
-.arc-texts {
-    position: absolute;
-    left: 33.2vw;
-    top: 16.7vh;
-    width: 16.6vw;
-}
-
-.arc-title {
-    display: block;
-    font-family: 'pretendard';
-    font-weight: 600;
-    font-size: 25px;
-    position: absolute;
-    width: 16.6vw;
-    height: 4.8vh;
-}
-
-.arc-name {
-    display: block;
-    font-family: 'pretendard';
-    font-weight: 600;
-    font-size: 20px;
-    position: absolute;
-    top: 19vh;
-    width: 16.6vw;
-    height: 3.8vh;
-    border: 0.5px solid #888989;
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-}
-
-.arc-material {
-    display: block;
-    font-family: 'pretendard';
-    font-size: 13px;
-    position: absolute;
-    top: 25vh;
-    width: 16.6vw;
-    height: 8vh;
-    border: 0.5px solid #888989;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
-
-.arc-size {
-    display: block;
-    font-family: 'pretendard';
-    font-size: 13px;
-    position: absolute;
-    top: 33vh;
-    width: 16.6vw;
-    height: 8vh;
-    border: 0.5px solid #888989;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
-
-.arc-caption {
-    font-family: 'pretendard';
-    font-weight: 400;
-    font-size: 13px;
-    position: absolute;
-    top: 41vh;
-    left: 0.5vh;
-    width: 16.5vw;
-    height: 32vh;
-    overflow: scroll;
-    line-height: 170%;
-}
-
-.arc-pics {
-    position: absolute;
-    left: 50vw;
-    top: 17vh;
-    max-width: 47vw;
-    max-height: 73vh;
-    overflow: scroll;
+.arc-material::-webkit-scrollbar-thumb {
+    background-color: transparent;
 }
 
 .arc-pics::-webkit-scrollbar {
@@ -116,9 +216,4 @@
 
 .arc-caption::-webkit-scrollbar-thumb {
     background-color: transparent;
-}
-
-.arc-img {
-    max-width: 45vw;
-    max-height: 70vh;
 }
